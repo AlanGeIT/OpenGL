@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F5324E0242F92DA006CB1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5324DF242F92DA006CB1BD /* Assets.xcassets */; };
+		8F5324E3242F92DA006CB1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5324E1242F92DA006CB1BD /* Main.storyboard */; };
+		8F5324FF242F930D006CB1BD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5324FE242F930D006CB1BD /* OpenGL.framework */; };
+		8F532501242F9313006CB1BD /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F532500242F9313006CB1BD /* GLUT.framework */; };
+		8F532503242F932D006CB1BD /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F532502242F932D006CB1BD /* libGLTools.a */; };
+		8F532505242F9338006CB1BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F532504242F9338006CB1BD /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F5324D6242F92D9006CB1BD /* 深度测试产生的问题.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "深度测试产生的问题.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5324DF242F92DA006CB1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F5324E2242F92DA006CB1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F5324E4242F92DA006CB1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5324E7242F92DA006CB1BD /* _________.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "_________.entitlements"; sourceTree = "<group>"; };
+		8F5324EE242F9303006CB1BD /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		8F5324EF242F9303006CB1BD /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		8F5324F0242F9303006CB1BD /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		8F5324F1242F9303006CB1BD /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		8F5324F2242F9303006CB1BD /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		8F5324F3242F9303006CB1BD /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		8F5324F4242F9303006CB1BD /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		8F5324F5242F9303006CB1BD /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		8F5324F6242F9303006CB1BD /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		8F5324F7242F9303006CB1BD /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		8F5324F9242F9303006CB1BD /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		8F5324FA242F9303006CB1BD /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		8F5324FB242F9303006CB1BD /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		8F5324FC242F9303006CB1BD /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		8F5324FE242F930D006CB1BD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8F532500242F9313006CB1BD /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		8F532502242F932D006CB1BD /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		8F532504242F9338006CB1BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F5324D3242F92D9006CB1BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F532503242F932D006CB1BD /* libGLTools.a in Frameworks */,
+				8F532501242F9313006CB1BD /* GLUT.framework in Frameworks */,
+				8F5324FF242F930D006CB1BD /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F5324CD242F92D9006CB1BD = {
+			isa = PBXGroup;
+			children = (
+				8F5324D8242F92D9006CB1BD /* 深度测试产生的问题 */,
+				8F5324D7242F92D9006CB1BD /* Products */,
+				8F5324FD242F930D006CB1BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F5324D7242F92D9006CB1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F5324D6242F92D9006CB1BD /* 深度测试产生的问题.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F5324D8242F92D9006CB1BD /* 深度测试产生的问题 */ = {
+			isa = PBXGroup;
+			children = (
+				8F5324ED242F9303006CB1BD /* include */,
+				8F5324DF242F92DA006CB1BD /* Assets.xcassets */,
+				8F5324E1242F92DA006CB1BD /* Main.storyboard */,
+				8F5324E4242F92DA006CB1BD /* Info.plist */,
+				8F5324E7242F92DA006CB1BD /* _________.entitlements */,
+				8F532504242F9338006CB1BD /* main.cpp */,
+			);
+			path = "深度测试产生的问题";
+			sourceTree = "<group>";
+		};
+		8F5324ED242F9303006CB1BD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8F5324EE242F9303006CB1BD /* GLBatchBase.h */,
+				8F5324EF242F9303006CB1BD /* math3d.h */,
+				8F5324F0242F9303006CB1BD /* GLTriangleBatch.h */,
+				8F5324F1242F9303006CB1BD /* GLBatch.h */,
+				8F5324F2242F9303006CB1BD /* GLMatrixStack.h */,
+				8F5324F3242F9303006CB1BD /* GLFrame.h */,
+				8F5324F4242F9303006CB1BD /* GLFrustum.h */,
+				8F5324F5242F9303006CB1BD /* GLGeometryTransform.h */,
+				8F5324F6242F9303006CB1BD /* GLShaderManager.h */,
+				8F5324F7242F9303006CB1BD /* StopWatch.h */,
+				8F5324F8242F9303006CB1BD /* GL */,
+				8F5324FC242F9303006CB1BD /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8F5324F8242F9303006CB1BD /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				8F5324F9242F9303006CB1BD /* glxew.h */,
+				8F5324FA242F9303006CB1BD /* wglew.h */,
+				8F5324FB242F9303006CB1BD /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		8F5324FD242F930D006CB1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F532502242F932D006CB1BD /* libGLTools.a */,
+				8F532500242F9313006CB1BD /* GLUT.framework */,
+				8F5324FE242F930D006CB1BD /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F5324D5242F92D9006CB1BD /* 深度测试产生的问题 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F5324EA242F92DA006CB1BD /* Build configuration list for PBXNativeTarget "深度测试产生的问题" */;
+			buildPhases = (
+				8F5324D2242F92D9006CB1BD /* Sources */,
+				8F5324D3242F92D9006CB1BD /* Frameworks */,
+				8F5324D4242F92D9006CB1BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "深度测试产生的问题";
+			productName = "深度测试产生的问题";
+			productReference = 8F5324D6242F92D9006CB1BD /* 深度测试产生的问题.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F5324CE242F92D9006CB1BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = AlanGe;
+				TargetAttributes = {
+					8F5324D5242F92D9006CB1BD = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 8F5324D1242F92D9006CB1BD /* Build configuration list for PBXProject "深度测试产生的问题" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F5324CD242F92D9006CB1BD;
+			productRefGroup = 8F5324D7242F92D9006CB1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F5324D5242F92D9006CB1BD /* 深度测试产生的问题 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F5324D4242F92D9006CB1BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5324E0242F92DA006CB1BD /* Assets.xcassets in Resources */,
+				8F5324E3242F92DA006CB1BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F5324D2242F92D9006CB1BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F532505242F9338006CB1BD /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F5324E1242F92DA006CB1BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F5324E2242F92DA006CB1BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F5324E8242F92DA006CB1BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F5324E9242F92DA006CB1BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F5324EB242F92DA006CB1BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "深度测试产生的问题/_________.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/深度测试产生的问题/include\"";
+				INFOPLIST_FILE = "深度测试产生的问题/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlanGe.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F5324EC242F92DA006CB1BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "深度测试产生的问题/_________.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/深度测试产生的问题/include\"";
+				INFOPLIST_FILE = "深度测试产生的问题/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlanGe.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F5324D1242F92D9006CB1BD /* Build configuration list for PBXProject "深度测试产生的问题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5324E8242F92DA006CB1BD /* Debug */,
+				8F5324E9242F92DA006CB1BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F5324EA242F92DA006CB1BD /* Build configuration list for PBXNativeTarget "深度测试产生的问题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5324EB242F92DA006CB1BD /* Debug */,
+				8F5324EC242F92DA006CB1BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F5324CE242F92D9006CB1BD /* Project object */;
+}

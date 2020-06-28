@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F3074B72487D06000A233FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074B62487D06000A233FF /* Assets.xcassets */; };
+		8F3074BA2487D06000A233FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074B82487D06000A233FF /* Main.storyboard */; };
+		8F3074C62487D09A00A233FF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3074C52487D09A00A233FF /* OpenGL.framework */; };
+		8F3074C82487D0A200A233FF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3074C72487D0A200A233FF /* GLUT.framework */; };
+		8F3074DA2487D0E500A233FF /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3074D92487D0E400A233FF /* libGLTools.a */; };
+		8F3074DC2487D1A600A233FF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3074DB2487D1A600A233FF /* main.cpp */; };
+		8F3074E22487D23300A233FF /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074DE2487D23300A233FF /* floor.tga */; };
+		8F3074E32487D23300A233FF /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074DF2487D23300A233FF /* brick.tga */; };
+		8F3074E42487D23300A233FF /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074E02487D23300A233FF /* ceiling.tga */; };
+		8F3074E52487D23300A233FF /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 8F3074E12487D23300A233FF /* stone.tga */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F3074AD2487D05F00A233FF /* 金字塔.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "金字塔.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3074B62487D06000A233FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F3074B92487D06000A233FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F3074BB2487D06000A233FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F3074BE2487D06000A233FF /* ___.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "___.entitlements"; sourceTree = "<group>"; };
+		8F3074C52487D09A00A233FF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8F3074C72487D0A200A233FF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		8F3074CA2487D0D700A233FF /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		8F3074CB2487D0D700A233FF /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		8F3074CC2487D0D700A233FF /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		8F3074CD2487D0D700A233FF /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		8F3074CE2487D0D700A233FF /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		8F3074CF2487D0D700A233FF /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		8F3074D02487D0D700A233FF /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		8F3074D12487D0D700A233FF /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		8F3074D22487D0D700A233FF /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		8F3074D32487D0D700A233FF /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		8F3074D52487D0D700A233FF /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		8F3074D62487D0D700A233FF /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		8F3074D72487D0D700A233FF /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		8F3074D82487D0D700A233FF /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		8F3074D92487D0E400A233FF /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		8F3074DB2487D1A600A233FF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8F3074DE2487D23300A233FF /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		8F3074DF2487D23300A233FF /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
+		8F3074E02487D23300A233FF /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
+		8F3074E12487D23300A233FF /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F3074AA2487D05F00A233FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3074DA2487D0E500A233FF /* libGLTools.a in Frameworks */,
+				8F3074C82487D0A200A233FF /* GLUT.framework in Frameworks */,
+				8F3074C62487D09A00A233FF /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F3074A42487D05F00A233FF = {
+			isa = PBXGroup;
+			children = (
+				8F3074AF2487D05F00A233FF /* 金字塔 */,
+				8F3074AE2487D05F00A233FF /* Products */,
+				8F3074C42487D09A00A233FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F3074AE2487D05F00A233FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074AD2487D05F00A233FF /* 金字塔.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F3074AF2487D05F00A233FF /* 金字塔 */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074C92487D0D700A233FF /* include */,
+				8F3074B62487D06000A233FF /* Assets.xcassets */,
+				8F3074B82487D06000A233FF /* Main.storyboard */,
+				8F3074BB2487D06000A233FF /* Info.plist */,
+				8F3074BE2487D06000A233FF /* ___.entitlements */,
+				8F3074DB2487D1A600A233FF /* main.cpp */,
+				8F3074DD2487D21E00A233FF /* SupportingFiles */,
+			);
+			path = "金字塔";
+			sourceTree = "<group>";
+		};
+		8F3074C42487D09A00A233FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074D92487D0E400A233FF /* libGLTools.a */,
+				8F3074C72487D0A200A233FF /* GLUT.framework */,
+				8F3074C52487D09A00A233FF /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F3074C92487D0D700A233FF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074CA2487D0D700A233FF /* GLBatchBase.h */,
+				8F3074CB2487D0D700A233FF /* math3d.h */,
+				8F3074CC2487D0D700A233FF /* GLTriangleBatch.h */,
+				8F3074CD2487D0D700A233FF /* GLBatch.h */,
+				8F3074CE2487D0D700A233FF /* GLMatrixStack.h */,
+				8F3074CF2487D0D700A233FF /* GLFrame.h */,
+				8F3074D02487D0D700A233FF /* GLFrustum.h */,
+				8F3074D12487D0D700A233FF /* GLGeometryTransform.h */,
+				8F3074D22487D0D700A233FF /* GLShaderManager.h */,
+				8F3074D32487D0D700A233FF /* StopWatch.h */,
+				8F3074D42487D0D700A233FF /* GL */,
+				8F3074D82487D0D700A233FF /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8F3074D42487D0D700A233FF /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074D52487D0D700A233FF /* glxew.h */,
+				8F3074D62487D0D700A233FF /* wglew.h */,
+				8F3074D72487D0D700A233FF /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		8F3074DD2487D21E00A233FF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8F3074DF2487D23300A233FF /* brick.tga */,
+				8F3074E02487D23300A233FF /* ceiling.tga */,
+				8F3074DE2487D23300A233FF /* floor.tga */,
+				8F3074E12487D23300A233FF /* stone.tga */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F3074AC2487D05F00A233FF /* 金字塔 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3074C12487D06000A233FF /* Build configuration list for PBXNativeTarget "金字塔" */;
+			buildPhases = (
+				8F3074A92487D05F00A233FF /* Sources */,
+				8F3074AA2487D05F00A233FF /* Frameworks */,
+				8F3074AB2487D05F00A233FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "金字塔";
+			productName = "金字塔";
+			productReference = 8F3074AD2487D05F00A233FF /* 金字塔.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F3074A52487D05F00A233FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = AlanGe;
+				TargetAttributes = {
+					8F3074AC2487D05F00A233FF = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 8F3074A82487D05F00A233FF /* Build configuration list for PBXProject "金字塔" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F3074A42487D05F00A233FF;
+			productRefGroup = 8F3074AE2487D05F00A233FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F3074AC2487D05F00A233FF /* 金字塔 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F3074AB2487D05F00A233FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3074E22487D23300A233FF /* floor.tga in Resources */,
+				8F3074B72487D06000A233FF /* Assets.xcassets in Resources */,
+				8F3074E32487D23300A233FF /* brick.tga in Resources */,
+				8F3074E42487D23300A233FF /* ceiling.tga in Resources */,
+				8F3074E52487D23300A233FF /* stone.tga in Resources */,
+				8F3074BA2487D06000A233FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F3074A92487D05F00A233FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3074DC2487D1A600A233FF /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F3074B82487D06000A233FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F3074B92487D06000A233FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F3074BF2487D06000A233FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F3074C02487D06000A233FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F3074C22487D06000A233FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "金字塔/___.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "金字塔/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlanGe.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/金字塔/include\"";
+			};
+			name = Debug;
+		};
+		8F3074C32487D06000A233FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "金字塔/___.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "金字塔/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlanGe.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/金字塔/include\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F3074A82487D05F00A233FF /* Build configuration list for PBXProject "金字塔" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3074BF2487D06000A233FF /* Debug */,
+				8F3074C02487D06000A233FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3074C12487D06000A233FF /* Build configuration list for PBXNativeTarget "金字塔" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3074C22487D06000A233FF /* Debug */,
+				8F3074C32487D06000A233FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F3074A52487D05F00A233FF /* Project object */;
+}
